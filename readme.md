@@ -1,6 +1,6 @@
 
 # Generic scaper to InfluxDB
-Grabs stock data and publishes to InfluxDB on periodic basis
+Grabs stock data from alphavantage and publishes to InfluxDB on periodic basis
 
 ### settings.py
 Create settings.py from settings.py.example

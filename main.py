@@ -80,6 +80,7 @@ def main():
     stocks = STOCKS.split(',')
     for stock in stocks:
         url = construct_url(stock)
+        do_it(url)
         schedule.every(RUNMINS).minutes.do(do_it, url)
 
     while True:

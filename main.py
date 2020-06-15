@@ -66,9 +66,9 @@ def sort_json(working_data):
         base_dict.update({'time': k})
         fields_data = {'price' : float(v['4. close']), 'volume' : int(v['5. volume']), 'low' : float(v['3. low']), 'high' : float(v['2. high'])}
         base_dict.update({'fields' : fields_data})
-        print('#'*30)
         data_payload = [base_dict]
         print("SUBMIT:" + str(data_payload))
+        print('#'*30)
         write_to_influx(data_payload)
 
 def do_it(*args):
